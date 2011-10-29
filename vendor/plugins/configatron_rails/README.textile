@@ -1,7 +1,7 @@
 h2. "ConfigatronRails":http://www.github.com/cmaggard/configatron-rails
 
 ConfigatronRails is a plugin born out of a want for environment-specific
-variables using a gem I've grown to appreciate: 
+variables using a gem I've grown to appreciate:
 "configatron":http://github.com/markbates/configatron.
 
 * "Installation":#INSTALL
@@ -17,7 +17,7 @@ h3. Installation / Upgrading
 
   <pre><code>
     > sudo gem install configatron
-  
+
     # Or toss this in your environment.rb (preferred method)
     config.gem "configatron"
   </code></pre>
@@ -48,7 +48,7 @@ _In config.yml_
 
     test:
       <<: *local
-  
+
     production:
       site_address: http://www.thebestappev.er/
   </code></pre>

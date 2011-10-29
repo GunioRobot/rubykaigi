@@ -24,7 +24,7 @@ flash.keep(:message)
 
 Controller helpers included:
 
-add_message( message, options ) 
+add_message( message, options )
 add_notice( message, options )
 add_error( message, options )
 

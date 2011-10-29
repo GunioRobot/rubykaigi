@@ -9,7 +9,7 @@ module HttpAcceptLanguage
       raise "Not correctly formatted" unless x.first =~ /^[a-z\-]+$/i
       y.last.to_f <=> x.last.to_f
     end.collect do |l|
-      l.first.downcase.gsub(/-[a-z]+$/i){|x| x.upcase} 
+      l.first.downcase.gsub(/-[a-z]+$/i){|x| x.upcase}
     end
   rescue
     []
@@ -17,10 +17,10 @@ module HttpAcceptLanguage
   def preferred_language_from(array)
     (user_preferred_languages & array).first
   end
-  
+
   def compatible_language_from(array)
     array.select{|x| lang = x.split("-")[0]; user_preferred_languages.any?{|y| y.split("-")[0] == lang }}.first
   end
-  
-  
+
+
 end

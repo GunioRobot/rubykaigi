@@ -36,7 +36,7 @@ class HttpAcceptLanguageTest < Test::Unit::TestCase
     assert_equal 'en-hk', request.compatible_language_from(%w{en-hk})
     assert_equal 'en', request.compatible_language_from(%w{en})
   end
-  
+
 
   private
   def request

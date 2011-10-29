@@ -16,14 +16,14 @@ See also: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
 
   class SomeController < ApplicationController
     def some_action
-      
+
       request.user_preferred_languages
       # => [ 'nl-NL', 'nl-BE', 'nl', 'en-US', 'en' ]
-      
+
       available = %w{en en-US nl-BE}
       request.preferred_language_from(available)
       # => 'nl-BE'
-      
+
       request.user_preferred_language
       # => [ 'en-GB']
       available = %w{en-US}
